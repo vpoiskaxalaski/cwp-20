@@ -1,9 +1,9 @@
 {
   "db": "world",
-  "login": "admin_cwp20",
-  "password": "cwp20",
+  "login": "cwp-12",
+  "password": "cwp-12",
   "port": 1433,
-  "host": "ANDREICHAYEUSKI",
+  "host": "localhost",
   "dialect": "mssql",
   "dialectOptions": {
     "instanceName": "MSSQLSERVER",

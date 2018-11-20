@@ -40,11 +40,11 @@ app.get('/', (req, res) => {
 			res.locals = {
 				title: 'Title',
 				countries: {
-					url: '/countries.html',
+					url: '/countries',
 					text: `Countries ${countriesCount}`
 				},
 				cities: {
-					url: '/cities.html',
+					url: '/cities',
 					text: `Cities ${citiesCount}`
 				}
 			};
