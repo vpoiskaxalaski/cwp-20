@@ -1,0 +1,20 @@
+<h1>Информация о городе</h1>
+
+<p>Город: {{city.Name}}</p>
+<p>Код страны: {{city.CountryCode}}</p>
+<p>Округ: {{city.District}}</p>
+<p>Население: {{city.Population}}</p>
+
+<h1>Страна
+    <a href='/countries/{{city.CountryCode}}'>{{country.Name}}</a>
+</h1>
+
+<p>Находится на континенте: {{country.Continent}}</p>
+<p>Официальные языки:
+{{#languages as |lang|}}</p>
+    <p>{{lang.dataValues.Language}}</p>
+{{/languages}}
+
+<p>Столица -
+<a href='/cities/{{capital.ID}}'>{{capital.Name}}</a>
+</p>

@@ -1,0 +1,9 @@
+<h1>Countries</h1>
+<h3>Countries {{pageCounter1}} - {{pageCounter2}}</h3>
+<div class="body">
+    {{#each countries}}
+        <a href="countries/{{Code}}">{{Name}}, {{Continent}}</a>
+        <br>
+    {{/each}}
+</div>
+{{{listLinks countPages pageNumber}}}

@@ -1,0 +1,31 @@
+<h1>{{country.Name}}</h1>
+<h2>{{country.LocalName}}</h2>
+
+<p>Столица страны:
+<a href='/cities/{{capital.ID}}'>{{capital.Name}}</a><br>
+</p>
+<p>Находится на континенте: {{country.Continent}}</p>
+<p>Находится в регионе: {{country.Region}}</p>
+<p>Занимаемая площадь: {{country.SurfaceArea}}</p>
+<p>Год независимости: {{country.IndepYear}}</p>
+<p>Ожидаемая продолжительности жизни: {{country.LifeExpectancy}}</p>
+<p>Количество населения: {{country.Population}}</p>
+<p>Количество городов: {{countOfCities}}</p>
+<p>Тип правительства: {{country.GovernmentForm}}</p>
+<p>Глава правительства: {{country.HeadOfState}}</p>
+<p>Код страны: {{country.Code}}</p>
+<p>Дополнительный код страны: {{country.Code2}}</p>
+<br>
+
+<h2>Крупнейшие города</h2>
+{{#cities as |city|}}
+    <a href='/cities/{{city.dataValues.ID}}'>{{city.dataValues.Name}} {{city.dataValues.Population}}</a>
+<br>
+{{/cities}}
+<br>
+<h2>Распространённые языки</h2>
+{{#languages as |lang|}}
+<h3>Название языка: {{lang.elem.dataValues.Language}}</h3>
+        Является ли официальным - {{TF lang.elem.IsOfficial}}. <br>
+        <p>Количество носителей языка: {{countMans lang}}</p>
+{{/languages}}

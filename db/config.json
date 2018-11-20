@@ -1,0 +1,16 @@
+{
+  "db": "world",
+  "login": "admin_cwp20",
+  "password": "cwp20",
+  "port": 1433,
+  "host": "ANDREICHAYEUSKI",
+  "dialect": "mssql",
+  "dialectOptions": {
+    "instanceName": "MSSQLSERVER",
+    "encrypt": true
+  },
+  "define": {
+    "timestamps": true,
+    "paranoid": true
+  }
+}
